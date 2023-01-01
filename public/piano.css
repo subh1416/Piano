@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #e3f2fd;
+}
+.wrapper {
+  border-radius: 20px;
+  padding: 35px 40px;
+  background: #141414;
+}
+.wrapper header {
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 1.6rem;
+}
+
+header .column {
+  display: flex;
+  align-items: center;
+}
+
+header .column span {
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 1.19rem;
+}
+
+.volume-slider input {
+  accent-color: #fff;
+  outline: none;
+}
+
+.keys-checkbox input {
+  width: 60px;
+  height: 30px;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 30px;
+  background: #4b4b4b;
+  outline: none;
+}
+.keys-checkbox input::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  left: 5px;
+  border-radius: inherit;
+  position: absolute;
+  background: #8c8c8c;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.keys-checkbox input:checked:before {
+  left: 35px;
+  background: #fff;
+}
+.piano-keys {
+  display: flex;
+  margin-top: 40px;
+}
+
+.piano-keys .key {
+  cursor: pointer;
+  list-style: none;
+  color: #a2a2a2;
+  position: relative;
+  user-select: none;
+  text-transform: uppercase;
+}
+.piano-keys span {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.13rem;
+}
+
+.piano-keys .key.hide span {
+  display: none;
+}
+
+.piano-keys .black {
+  width: 44px;
+  height: 140px;
+  z-index: 2;
+  margin: 0 -22px 0 -22px;
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(#333, #000);
+}
+
+.piano-keys .black.active {
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, #000, #434343);
+}
+.piano-keys .white {
+  width: 70px;
+  height: 230px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.piano-keys .white.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+
+@media screen and (max-width: 815px) {
+  .wrapper {
+    padding: 25px;
+  }
+  header {
+    flex-direction: column;
+  }
+  header :where(h2, .column) {
+    margin-bottom: 13px;
+  }
+  .volume-slider input {
+    max-width: 100px;
+  }
+  .piano-keys {
+    margin-top: 20px;
+  }
+  .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
+    display: none;
+  }
+  .piano-keys .black {
+    height: 100px;
+    width: 40px;
+    margin: 0 -20px 0 -20px;
+  }
+  .piano-keys .white {
+    height: 180px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .piano-keys .key:nth-child(13),
+  .piano-keys .key:nth-child(14),
+  .piano-keys .key:nth-child(15),
+  .piano-keys .key:nth-child(16),
+  .piano-keys .key :nth-child(17) {
+    display: none;
+  }
+  .piano-keys .white {
+    width: 50px;
+  }
+}
+.container {
+  position: relative;
+  margin-bottom: 1.5em;
+  margin-right: -33em;
+  /* margin-right: 3em;
+  padding-right: 2em; */
+}
+.container2 {
+  position: relative;
+  margin-bottom: 1.5em;
+  margin-left: -5.5em;
+}
+.container3 {
+  position: relative;
+  margin-bottom: 1.5em;
+  /* margin-left: -0.2em; */
+  /* left: 18em; */
+}
+.container4 {
+  position: relative;
+  margin-bottom: 1.5em;
+  margin-right: 3em;
+}
+.icons {
+  /* padding: 20px 50px; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  /* overflow: hidden; */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  overflow: none;
+  border-style: none;
+}
+
+.icons.active {
+  box-shadow: rgba(90, 240, 170, 0.774) 0px 54px 55px,
+    rgba(90, 240, 170, 0.774) 0px -12px 30px,
+    rgba(90, 240, 170, 0.774) 0px 4px 6px,
+    rgba(90, 240, 170, 0.774) 0px 12px 13px,
+    rgba(90, 240, 170, 0.774) 0px -3px 5px;
+}
+
+.icons svg {
+  margin-bottom: 9px;
+  align-items: center;
+  margin-left: -1px;
+}
+
+.icons:hover {
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4));
+  box-shadow: 0;
+  border-radius: 50%;
+}
+.icons3 {
+  /* padding: 20px 50px; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  /* overflow: hidden; */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  overflow: none;
+  border-style: none;
+}
+
+.icons3 svg {
+  margin-bottom: 9px;
+  align-items: center;
+  margin-left: -1px;
+}
+
+.icons3:hover {
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4));
+  box-shadow: 0;
+  border-radius: 50%;
+}
+.icons2 {
+  /* padding: 20px 50px; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  /* overflow: hidden; */
+  background: rgba(26, 25, 25, 0.1);
+  box-shadow: 0 5px 5px rgb(0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  overflow: none;
+  border-style: none;
+}
+
+.icons2 svg {
+  margin-bottom: 9px;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.icons2:hover {
+  background: linear-gradient(to right, transparent, rgba(3, 3, 3, 0.4));
+  box-shadow: 0;
+  border-radius: 50%;
+}
+.icons4 {
+  /* padding: 20px 50px; */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  width: 30px;
+  height: 30px;
+  /* overflow: hidden; */
+  background: rgba(26, 25, 25, 0.1);
+  box-shadow: 0 5px 5px rgb(0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  overflow: none;
+  border-style: none;
+}
+
+.icons4 svg {
+  margin-bottom: 9px;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.icons4:hover {
+  background: linear-gradient(to right, transparent, rgba(3, 3, 3, 0.4));
+  box-shadow: 0;
+  border-radius: 50%;
+}
+
+.records {
+  display: none;
+  padding-top: 0;
+}
+
+.icons2,
+.icons3,
+.icons4 {
+  display: none;
+}
+
+.icons2.show,
+.icons4.show
+{
+  display: block;
+}
+
+.icons3.show{
+  display: block;
+ 
+}

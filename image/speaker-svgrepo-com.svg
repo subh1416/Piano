@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 496.2 496.2" xml:space="preserve">
+<path style="fill:#EA4949;" d="M496.2,248.1C496.2,111.1,385.1,0,248.1,0S0,111.1,0,248.1s111.1,248.1,248.1,248.1
+	S496.2,385.1,496.2,248.1z"/>
+<path style="fill:#5B4F3F;" d="M141.6,405.5h213c5.3,0,9.5-4.3,9.5-9.5V100.2c0-5.3-4.3-9.5-9.5-9.5h-213c-5.3,0-9.5,4.3-9.5,9.5
+	v295.7C132,401.2,136.3,405.5,141.6,405.5z"/>
+<path style="fill:#3A3228;" d="M323.7,309.1c0-41.7-33.8-75.6-75.6-75.6s-75.6,33.8-75.6,75.6c0,41.7,33.8,75.6,75.6,75.6
+	S323.7,350.8,323.7,309.1z"/>
+<circle style="fill:#877F74;" cx="248.1" cy="309.1" r="50.6"/>
+<path style="fill:#A5A4A4;" d="M248.1,309.1v-50.6c-28,0-50.6,22.7-50.6,50.6H248.1z"/>
+<g>
+	<circle style="fill:#3A3228;" cx="248.1" cy="309.1" r="14.8"/>
+	<circle style="fill:#3A3228;" cx="248.1" cy="161.6" r="48.6"/>
+</g>
+<circle style="fill:#877F74;" cx="248.1" cy="161.6" r="27.5"/>
+<path style="fill:#A5A4A4;" d="M275.6,161.6h-27.5v27.5C263.3,189.1,275.6,176.8,275.6,161.6z"/>
+<circle style="fill:#3A3228;" cx="248.1" cy="161.6" r="9.8"/>
+</svg>

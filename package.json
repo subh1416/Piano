@@ -1,0 +1,20 @@
+{
+  "name": "piano-records",
+  "version": "1.0.0",
+  "description": "",
+  "main": "piano.js",
+  "scripts": {
+   "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
